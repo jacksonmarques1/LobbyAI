@@ -1,0 +1,122 @@
+{
+  "originais": 2000,
+  "sem_texto": 0,
+  "conflitantes": 0,
+  "duplicadas": 0,
+  "validas": 2000,
+  "treino": 1600,
+  "teste": 400,
+  "quantidades": {
+    "Não recomendou": 1000,
+    "Recomendou": 1000
+  },
+  "mediana_palavras": {
+    "Não recomendou": 336.0,
+    "Recomendou": 351.5
+  },
+  "ate_20_palavras": 0,
+  "modelos": {
+    "Naive Bayes": {
+      "f1_validacao": 0.8329443358026254,
+      "acertos": 334,
+      "f1_macro": 0.834983498349835,
+      "metricas": {
+        "Não recomendou": {
+          "precision": 0.8284313725490197,
+          "recall": 0.845,
+          "f1-score": 0.8366336633663366,
+          "support": 200.0
+        },
+        "Recomendou": {
+          "precision": 0.8418367346938775,
+          "recall": 0.825,
+          "f1-score": 0.8333333333333334,
+          "support": 200.0
+        },
+        "accuracy": 0.835,
+        "macro avg": {
+          "precision": 0.8351340536214487,
+          "recall": 0.835,
+          "f1-score": 0.834983498349835,
+          "support": 400.0
+        },
+        "weighted avg": {
+          "precision": 0.8351340536214485,
+          "recall": 0.835,
+          "f1-score": 0.834983498349835,
+          "support": 400.0
+        }
+      },
+      "matriz": [
+        [
+          169,
+          31
+        ],
+        [
+          35,
+          165
+        ]
+      ]
+    },
+    "Regressão Logística": {
+      "f1_validacao": 0.8404613425535115,
+      "acertos": 337,
+      "f1_macro": 0.8424517508486974,
+      "metricas": {
+        "Não recomendou": {
+          "precision": 0.8549222797927462,
+          "recall": 0.825,
+          "f1-score": 0.8396946564885496,
+          "support": 200.0
+        },
+        "Recomendou": {
+          "precision": 0.8309178743961353,
+          "recall": 0.86,
+          "f1-score": 0.8452088452088452,
+          "support": 200.0
+        },
+        "accuracy": 0.8425,
+        "macro avg": {
+          "precision": 0.8429200770944407,
+          "recall": 0.8425,
+          "f1-score": 0.8424517508486974,
+          "support": 400.0
+        },
+        "weighted avg": {
+          "precision": 0.8429200770944408,
+          "recall": 0.8425,
+          "f1-score": 0.8424517508486974,
+          "support": 400.0
+        }
+      },
+      "matriz": [
+        [
+          165,
+          35
+        ],
+        [
+          28,
+          172
+        ]
+      ]
+    }
+  },
+  "escolhido": "Regressão Logística",
+  "demonstracao": [
+    {
+      "id": "pos-0431",
+      "voto": 1,
+      "previsto": 1
+    },
+    {
+      "id": "neg-0206",
+      "voto": 0,
+      "previsto": 0
+    },
+    {
+      "id": "neg-0065",
+      "voto": 0,
+      "previsto": 1
+    }
+  ]
+}
