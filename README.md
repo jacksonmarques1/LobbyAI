@@ -39,9 +39,9 @@ Antes de dividir a base, o script normaliza espaços, remove links, e-mails e me
 2. As avaliações positivas têm mediana de 351,5 palavras, contra 336 nas negativas. O comprimento sozinho ajuda pouco a distinguir os dois grupos no gráfico.
 3. Nenhuma das 2.000 avaliações tem 20 palavras ou menos pela contagem usada. Se você digitar só “gostei do jogo”, o modelo dará um palpite, mas a acurácia medida no teste diz pouco sobre frases desse tamanho.
 
-![Quantidade de avaliações por voto](reports/graficos/votos.png)
+![Votos na amostra da Steam. Metade dos jogadores recomendou o jogo e metade votou contra.](reports/graficos/votos.png)
 
-![Distribuição do total de palavras por avaliação e voto](reports/graficos/tamanho.png)
+![Número de avaliações por voto em quatro faixas de comprimento, de até 249 a 750 palavras ou mais.](reports/graficos/tamanho.png)
 
 ## Como comparei os modelos
 
