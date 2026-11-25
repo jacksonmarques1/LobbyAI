@@ -4,6 +4,8 @@
 
 O LobbyAI ajuda a escolher um jogo de PC para experimentar. A vitrine reúne indies, demos, jogos completos grátis e opções cooperativas da Steam. Dá para começar pelo número de jogadores, pelo voto da comunidade ou pelo tipo de experiência que você quer jogar.
 
+[Abrir o LobbyAI online](https://nvhf4apw7m5d9xzzdmagik.streamlit.app/)
+
 ![Página de descoberta com coleções de indies, demos e jogos grátis](screenshots/descobrir.png)
 
 ## Como usar
