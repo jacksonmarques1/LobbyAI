@@ -85,14 +85,37 @@ O teste cobre um recorte equilibrado de avaliações longas. Uma página especí
 
 ## Organização do projeto
 
-| Caminho | Conteúdo |
-| --- | --- |
-| `app.py`, `interface.css` | Navegação, descoberta, filtros, fichas e ranking. |
-| `catalogo.py`, `data/catalogo.json` | Coleta dos indicadores e última consulta disponível. |
-| `review_lab.py`, `corpus.py`, `train.py` | Interface do laboratório, preparação dos textos e comparação dos modelos. |
-| `models/`, `reports/` | Modelo salvo, métricas e gráficos produzidos no treinamento. |
-| `screenshots/`, `static/fonts/` | Evidências de execução e fontes da interface. |
-| `requirements.txt`, `.streamlit/` | Dependências e configuração do Streamlit. |
+```text
+LobbyAI/
+├── app.py                  # Página inicial, filtros, fichas dos jogos e ranking
+├── interface.css           # Estilos da interface
+├── catalogo.py             # Consulta os dados dos jogos e atualiza o catálogo
+├── review_lab.py           # Laboratório de avaliações em português
+├── corpus.py               # Carrega e limpa os comentários da Steam
+├── train.py                # Treina os modelos e gera as métricas e os gráficos
+├── data/
+│   ├── catalogo.json       # Última coleta de dados dos jogos
+│   ├── selecao.json        # Seleção de jogos do catálogo
+│   ├── CATALOGO.md         # Critérios de seleção e fontes do catálogo
+│   └── README.md           # Origem e condições de uso das avaliações
+├── models/
+│   └── lobbyai.joblib      # Modelo treinado que o Laboratório usa nas previsões
+├── reports/
+│   ├── metricas.json       # Resultados dos dois classificadores
+│   ├── README.md           # Análise dos resultados
+│   └── graficos/
+│       ├── votos.png       # Distribuição dos votos da amostra
+│       └── tamanho.png     # Tamanho dos comentários por voto
+├── screenshots/            # Capturas do app no computador e no celular
+├── static/
+│   ├── art/                # Imagens dos jogos
+│   └── fonts/              # Fontes da interface
+├── .streamlit/
+│   └── config.toml         # Tema e configuração do Streamlit
+├── requirements.txt        # Dependências do projeto
+├── Abrir_LobbyAI.bat       # Inicia o app no Windows
+└── README.md               # Apresentação e instruções de execução
+```
 
 ## Verificação da interface
 
