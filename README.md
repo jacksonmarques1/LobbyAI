@@ -4,7 +4,7 @@
 
 O LobbyAI ajuda a escolher um jogo de PC para experimentar. A vitrine reúne indies, demos, jogos completos grátis e opções cooperativas da Steam. Dá para começar pelo número de jogadores, pelo voto da comunidade ou pelo tipo de experiência que você quer jogar.
 
-[Abrir o LobbyAI online](https://nvhf4apw7m5d9xzzdmagik.streamlit.app/)
+[Abrir o LobbyAI online](https://nvhf4apw7m5d9xzzdmagik.streamlit.app/) · [Uso de IA com Codex](#uso-de-ia)
 
 ![Página de descoberta com coleções de indies, demos e jogos grátis](screenshots/descobrir.png)
 
@@ -49,21 +49,24 @@ Antes de dividir a base, o script normaliza espaços, remove links, e-mails e me
 
 Separei 1.600 avaliações para treino e 400 para teste, preservando a proporção dos votos e usando semente 42. O TF-IDF representa palavras e pares de palavras como números. Os pares permitem tratar expressões como “não gostei” juntas. Cada modelo aprende seu vocabulário apenas com a parte de treino de cada divisão.
 
-Comparei Naive Bayes multinomial e Regressão Logística em cinco divisões do treino. O critério de escolha foi o **F1 macro**, a média do F1 dos dois votos. Assim, ambos têm o mesmo peso. A Regressão Logística ficou com 84,05% na validação, contra 83,29% do Naive Bayes. Depois dessa escolha, avaliei os dois modelos no mesmo teste reservado.
+Comparei Naive Bayes multinomial e Regressão Logística em cinco divisões do treino. O critério de escolha foi o **F1 macro**, a média do F1 dos dois votos. Assim, ambos têm o mesmo peso. Escolhi a Regressão Logística pelo F1 macro na validação (84,05% frente a 83,29% do Naive Bayes). Só então comparei os dois modelos nas mesmas 400 avaliações de teste.
 
-| Modelo | F1 macro na validação | Acertos no teste | Acurácia | Precisão macro | Recall macro | F1 macro no teste |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Naive Bayes | 83,29% | 334/400 | 83,50% | 83,51% | 83,50% | 83,50% |
-| Regressão Logística | 84,05% | 337/400 | 84,25% | 84,29% | 84,25% | 84,25% |
-
-No teste da Regressão Logística, a matriz de confusão ficou assim:
-
-| Voto do jogador | Previsão 👎 | Previsão 👍 |
+| No teste | Naive Bayes | Regressão Logística |
 | --- | ---: | ---: |
-| 👎 Não recomendou | 165 | 35 |
-| 👍 Recomendou | 28 | 172 |
+| Avaliações corretas | 334 de 400 | 337 de 400 |
+| Acurácia | 83,50% | 84,25% |
+| F1 macro | 83,50% | 84,25% |
+| Precisão macro | 83,51% | 84,29% |
+| Recall macro | 83,50% | 84,25% |
 
-A Regressão Logística acertou três avaliações a mais que o Naive Bayes. Das 200 avaliações de quem votou contra, ela classificou 35 como recomendações. Entre os 200 jogadores que recomendaram o jogo, o modelo errou o voto de 28.
+### Onde o modelo errou
+
+A Regressão Logística errou 63 dos 400 votos. O erro mais comum foi interpretar uma crítica como recomendação.
+
+- **Quando o jogador recomendou**, o modelo acertou 172 vezes e previu voto contrário em 28.
+- **Quando o jogador votou contra**, o modelo acertou 165 vezes e previu uma recomendação em 35.
+
+[Matriz de confusão completa](reports/README.md#onde-os-modelos-erraram)
 
 Um desses erros veio de uma avaliação de *Mortal Kombat*. O jogador elogiou a nostalgia, criticou o multiplayer e votou contra. O modelo leu o comentário inteiro e previu uma recomendação. Quem olha só para a previsão perde a queixa sobre jogar online. [Análise dos resultados](reports/README.md) · [Métricas por classe dos dois modelos](reports/metricas.json)
 
@@ -140,4 +143,4 @@ Na vitrine, os filtros mudam os jogos exibidos. Cada capa abre a ficha do títul
 
 ## Uso de IA
 
-O Codex auxiliou na implementação, no treinamento, nos testes e na redação da documentação. As métricas apresentadas foram calculadas pela execução de `train.py` sobre as avaliações da base.
+Usei o OpenAI Codex como assistente na implementação, no treinamento, nos testes e na redação da documentação. As métricas apresentadas foram calculadas pela execução de `train.py` sobre as avaliações da base.
