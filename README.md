@@ -116,7 +116,6 @@ Na vitrine, os filtros mudam os jogos exibidos. Cada capa abre a ficha do títul
 
 ## Referências
 
-- [LilyAI, de Vitória Passos](https://github.com/vitoriarop/LilyAI), referência para a organização da documentação acadêmica.
 - [Britto e Pacífico, SBGames 2020](https://www.sbgames.org/proceedings2020/ComputacaoShort/209781.pdf), fonte do corpus brasileiro.
 - [Steam Web API](https://partner.steamgames.com/doc/webapi/ISteamUserStats#GetNumberOfCurrentPlayers) e [SteamSpy](https://steamspy.com/api.php), fontes dos indicadores do catálogo.
 
