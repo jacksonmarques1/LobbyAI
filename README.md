@@ -2,13 +2,14 @@
 
 **Jackson Marques de Souza · ML Challenge · 25 de novembro de 2026**
 
-O LobbyAI ajuda a escolher um jogo de PC para experimentar. A vitrine reúne oito jogos da Steam com perfis diferentes. Dá para começar pelo número de jogadores, pelo voto da comunidade ou pelo tipo de experiência que você quer jogar.
+O LobbyAI ajuda a escolher um jogo de PC para experimentar. A vitrine reúne indies, demos, jogos completos grátis e opções cooperativas da Steam. Dá para começar pelo número de jogadores, pelo voto da comunidade ou pelo tipo de experiência que você quer jogar.
 
-![Página de descoberta com Hades II e o ranking da seleção](screenshots/descobrir.png)
+![Página de descoberta com coleções de indies, demos e jogos grátis](screenshots/descobrir.png)
 
 ## Como usar
 
-- **Descobrir** traz um destaque da curadoria e filtros por modalidade. Em **Fora do radar**, aparecem jogos com menos jogadores dentro do catálogo e boa recepção entre quem avaliou.
+- **Descobrir** abre quatro coleções e um radar de demos indie consultado na Steam. As sugestões de cada coleção variam por dia. Use **Atualizar catálogo da Steam** para buscar novas demos e atualizar os dados pela própria tela. Em **Explorar**, combine filtros como **Grátis + Co-op online** ou **Indie + Demo**, ou use **Surpreenda-me** dentro da seleção. Cada ficha permite continuar explorando outros jogos.
+- **Demos** abrem a página da demonstração na Steam; os modos da ficha são os do jogo completo. **Grátis** identifica o jogo completo que a loja informa como gratuito.
 - **Ranking** ordena o catálogo pela quantidade de pessoas jogando simultaneamente na última consulta. A ficha de cada jogo mostra o horário da leitura, as avaliações acumuladas e os links da Steam e da Twitch.
 - **Laboratório** é a parte de aprendizado de máquina do trabalho. O modelo lê uma avaliação em português e tenta prever o voto do autor. Na aba **Teste às cegas**, é possível revelar o voto real após dar um palpite.
 

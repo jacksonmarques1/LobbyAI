@@ -62,3 +62,14 @@ header[data-testid="stHeader"]{display:none}
 @media(max-width:975px){.lobby.mast{grid-template-columns:minmax(0,1.65fr) minmax(260px,1fr);gap:14px}.ranking{padding:14px}.cards{gap:18px 12px}.rankrow img{width:44px}.lobby .rankrow{grid-template-columns:16px 44px 1fr auto}}
 @media(max-width:740px){.lobby.mast{grid-template-columns:1fr}.lobby .top{height:62px}.lobby .brand{font-size:26px}.brand i{width:24px;height:27px}.lobby nav{gap:12px}.lobby nav a{font-size:11px}.feature{min-height:320px}.feature-inner{padding:23px}.feature:before{background-position:65% center}.lobby .feature p{max-width:28ch}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.shelfbar{align-items:flex-start;flex-direction:column;gap:12px}.mast .ranking{padding:14px 16px}.mast .rankrow{min-height:43px}.mast .ranking h2{font-size:27px}.detailgrid{grid-template-columns:1fr}.lobby a.filter{padding:7px 9px}.lobby .feature h1{font-size:58px}}
 @media(prefers-reduced-motion:no-preference){.gamecard,.cta,.rankname{transition:color .15s,filter .15s}.gamecard:hover img{filter:brightness(1.1)}}
+
+.directory .collection-link{display:flex;align-items:center;gap:8px;padding:12px 0;border-top:1px solid var(--rule)}
+.collection-link span{font:600 22px/1.1 var(--narrow)}.collection-link small{margin-left:auto;color:var(--mute);font-size:11px}
+.collection-link b{color:var(--lime)}.collection-link:hover span{color:var(--lime)}
+.jacket{position:relative}.access{position:absolute;bottom:7px;left:7px;background:#101211ed;color:var(--lime);padding:4px 7px;font-size:11px;font-weight:700}
+.lobby .gamecard .reason{font-size:13px;color:var(--mute);line-height:1.45;margin:6px 0}.gamecard .verdict{font-size:11px}
+.lobby .shelfbar h1{font:italic 700 clamp(40px,5vw,72px)/1 var(--display);padding:0;margin:6px 0}
+.results-count{font-size:13px;color:var(--mute);margin:15px 0}.lobby .resetlink{color:var(--lime);margin-left:12px;text-decoration:underline}
+.lobby .democta{display:inline-block;color:#fff;margin:8px 0 0 12px;background:#121511;padding:8px 12px;font-size:13px;font-weight:700}
+
+.lobby .gamecard .reason{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.gamecard:focus-visible{outline-offset:3px}.lobby .directory h2{margin-bottom:14px}

@@ -5,35 +5,55 @@
     "genre": "Roguelike",
     "mode": "Solo",
     "summary": "Enfrente o titã do tempo numa sequência de combates, feitiços e novas tentativas.",
-    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145350/header.jpg",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1779901265",
     "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145350/library_hero.jpg",
     "players": {
-      "count": 3148,
-      "consultado": "2026-11-25T18:49:16+00:00"
+      "count": 3168,
+      "consultado": "2026-11-25T19:04:50+00:00"
     },
     "reviews": {
       "positive": 111392,
       "negative": 5013,
-      "consultado": "2026-11-25T18:49:16+00:00"
-    }
+      "consultado": "2026-11-25T19:04:50+00:00"
+    },
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Supergiant Games",
+    "store_checked": "2026-11-25T19:04:49+00:00",
+    "from_feed": false
   },
   {
     "id": 548430,
     "title": "Deep Rock Galactic",
     "genre": "Tiro em equipe",
-    "mode": "Cooperativo",
+    "mode": "Solo + Cooperativo",
     "summary": "Quatro anões, uma missão de mineração e cavernas que mudam a cada descida.",
-    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/548430/header.jpg",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/37b58a6c4816ee60b0ca97cb6724d6e904c58c41/header.jpg?t=1794917410",
     "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/548430/library_hero.jpg",
     "players": {
-      "count": 5486,
-      "consultado": "2026-11-25T18:49:18+00:00"
+      "count": 5519,
+      "consultado": "2026-11-25T19:04:50+00:00"
     },
     "reviews": {
       "positive": 297446,
       "negative": 8263,
-      "consultado": "2026-11-25T18:49:18+00:00"
-    }
+      "consultado": "2026-11-25T19:04:50+00:00"
+    },
+    "indie": false,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Ghost Ship Games",
+    "store_checked": "2026-11-25T19:04:49+00:00",
+    "from_feed": false
   },
   {
     "id": 2379780,
@@ -41,17 +61,27 @@
     "genre": "Estratégia",
     "mode": "Solo",
     "summary": "Combine curingas e mãos de pôquer para quebrar o placar da próxima rodada.",
-    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/header.jpg",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/7a85430784e4d613cdb0547414d8cf16ffa45747/header.jpg?t=1790693638",
     "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/library_hero.jpg",
     "players": {
-      "count": 6900,
-      "consultado": "2026-11-25T18:49:20+00:00"
+      "count": 6902,
+      "consultado": "2026-11-25T19:04:49+00:00"
     },
     "reviews": {
       "positive": 159918,
       "negative": 3554,
-      "consultado": "2026-11-25T18:49:20+00:00"
-    }
+      "consultado": "2026-11-25T19:04:49+00:00"
+    },
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "LocalThunk",
+    "store_checked": "2026-11-25T19:04:49+00:00",
+    "from_feed": false
   },
   {
     "id": 753640,
@@ -59,17 +89,27 @@
     "genre": "Exploração",
     "mode": "Solo",
     "summary": "Explore um sistema solar preso em um ciclo de 22 minutos. Cada descoberta muda sua próxima viagem.",
-    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/header.jpg",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/753640/079ae4a7ff4b5875adc5c63c4c0b84e5a3e6966b/header.jpg?t=1785424341",
     "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/library_hero.jpg",
     "players": {
-      "count": 1194,
-      "consultado": "2026-11-25T18:49:22+00:00"
+      "count": 1188,
+      "consultado": "2026-11-25T19:04:50+00:00"
     },
     "reviews": {
       "positive": 87612,
       "negative": 4128,
-      "consultado": "2026-11-25T18:49:22+00:00"
-    }
+      "consultado": "2026-11-25T19:04:50+00:00"
+    },
+    "indie": false,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Mobius Digital",
+    "store_checked": "2026-11-25T19:04:50+00:00",
+    "from_feed": false
   },
   {
     "id": 1030300,
@@ -77,53 +117,83 @@
     "genre": "Aventura",
     "mode": "Solo",
     "summary": "Suba por um reino de seda e canções com a agulha e a agilidade de Hornet.",
-    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030300/header.jpg",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1776125736",
     "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030300/library_hero.jpg",
     "players": {
-      "count": 6690,
-      "consultado": "2026-11-25T18:49:23+00:00"
+      "count": 6720,
+      "consultado": "2026-11-25T19:04:51+00:00"
     },
     "reviews": {
       "positive": 0,
       "negative": 0,
-      "consultado": "2026-11-25T18:49:24+00:00"
-    }
+      "consultado": "2026-11-25T19:04:51+00:00"
+    },
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Team Cherry",
+    "store_checked": "2026-11-25T19:04:50+00:00",
+    "from_feed": false
   },
   {
     "id": 632360,
     "title": "Risk of Rain 2",
     "genre": "Roguelike",
-    "mode": "Cooperativo",
+    "mode": "Solo + Cooperativo",
     "summary": "Sobreviva a um planeta que fica mais hostil a cada minuto, sozinho ou em equipe.",
-    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632360/header.jpg",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632360/header.jpg?t=1791475448",
     "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632360/library_hero.jpg",
     "players": {
-      "count": 6830,
-      "consultado": "2026-11-25T18:49:25+00:00"
+      "count": 6888,
+      "consultado": "2026-11-25T19:04:51+00:00"
     },
     "reviews": {
       "positive": 228397,
       "negative": 14803,
-      "consultado": "2026-11-25T18:49:25+00:00"
-    }
+      "consultado": "2026-11-25T19:04:51+00:00"
+    },
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Hopoo Games",
+    "store_checked": "2026-11-25T19:04:50+00:00",
+    "from_feed": false
   },
   {
     "id": 892970,
     "title": "Valheim",
     "genre": "Sobrevivência",
-    "mode": "Cooperativo",
+    "mode": "Solo + Cooperativo",
     "summary": "Construa um abrigo e atravesse mares desconhecidos com seu grupo de vikings.",
-    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/892970/header.jpg",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/df65cafab20dae97a243c7cc988e8bf959e4b906/header.jpg?t=1791544831",
     "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/892970/library_hero.jpg",
     "players": {
-      "count": 37458,
-      "consultado": "2026-11-25T18:49:27+00:00"
+      "count": 38857,
+      "consultado": "2026-11-25T19:04:51+00:00"
     },
     "reviews": {
       "positive": 457605,
       "negative": 30880,
-      "consultado": "2026-11-25T18:49:27+00:00"
-    }
+      "consultado": "2026-11-25T19:04:51+00:00"
+    },
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Iron Gate AB",
+    "store_checked": "2026-11-25T19:04:51+00:00",
+    "from_feed": false
   },
   {
     "id": 646570,
@@ -131,16 +201,1568 @@
     "genre": "Estratégia",
     "mode": "Solo",
     "summary": "Monte um baralho carta por carta enquanto escolhe sua rota até o topo da torre.",
-    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg?t=1774015376",
     "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646570/library_hero.jpg",
     "players": {
-      "count": 4167,
-      "consultado": "2026-11-25T18:49:28+00:00"
+      "count": 4123,
+      "consultado": "2026-11-25T19:04:51+00:00"
     },
     "reviews": {
       "positive": 188734,
       "negative": 4983,
-      "consultado": "2026-11-25T18:49:29+00:00"
-    }
+      "consultado": "2026-11-25T19:04:52+00:00"
+    },
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Mega Crit",
+    "store_checked": "2026-11-25T19:04:51+00:00",
+    "from_feed": false
+  },
+  {
+    "id": 1607680,
+    "title": "Bread & Fred",
+    "genre": "Plataforma",
+    "mode": "Solo + Cooperativo",
+    "summary": "Dois pinguins presos por uma corda precisam sincronizar cada salto.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1607680/header.jpg?t=1773071421",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1607680/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": true,
+    "demos": [
+      1763200
+    ],
+    "developer": "SandCastles Studio",
+    "store_checked": "2026-11-25T19:04:51+00:00",
+    "players": {
+      "count": 44,
+      "consultado": "2026-11-25T19:04:51+00:00"
+    },
+    "reviews": {
+      "positive": 3575,
+      "negative": 811,
+      "consultado": "2026-11-25T19:04:52+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 582500,
+    "title": "We Were Here",
+    "genre": "Enigmas",
+    "mode": "Cooperativo",
+    "summary": "Cada pessoa vê uma parte do castelo. Descrevam o que estão vendo para escapar.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582500/header.jpg?t=1792410832",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/582500/library_hero.jpg",
+    "indie": true,
+    "free": true,
+    "solo": false,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Total Mayhem Games",
+    "store_checked": "2026-11-25T19:04:52+00:00",
+    "players": {
+      "count": 232,
+      "consultado": "2026-11-25T19:04:52+00:00"
+    },
+    "reviews": {
+      "positive": 30038,
+      "negative": 3676,
+      "consultado": "2026-11-25T19:04:52+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1289310,
+    "title": "Helltaker",
+    "genre": "Quebra-cabeça",
+    "mode": "Solo",
+    "summary": "Resolva os enigmas do inferno montando rotas para esqueletos em Helltaker.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1289310/header.jpg?t=1620755466",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1289310/library_hero.jpg",
+    "indie": true,
+    "free": true,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "vanripper",
+    "store_checked": "2026-11-25T19:04:52+00:00",
+    "players": {
+      "count": 60,
+      "consultado": "2026-11-25T19:04:52+00:00"
+    },
+    "reviews": {
+      "positive": 125521,
+      "negative": 2988,
+      "consultado": "2026-11-25T19:04:52+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1274570,
+    "title": "DEVOUR",
+    "genre": "Terror",
+    "mode": "Solo + Cooperativo",
+    "summary": "Dividam tarefas enquanto tentam interromper um ritual em DEVOUR.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1274570/bb90f9fa36e4c35a5f28cdc38cf75b3eb5c39032/header.jpg?t=1765533474",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1274570/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Straight Back Games",
+    "store_checked": "2026-11-25T19:04:52+00:00",
+    "players": {
+      "count": 488,
+      "consultado": "2026-11-25T19:04:53+00:00"
+    },
+    "reviews": {
+      "positive": 62786,
+      "negative": 6346,
+      "consultado": "2026-11-25T19:04:53+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 739630,
+    "title": "Phasmophobia",
+    "genre": "Investigação",
+    "mode": "Solo + Cooperativo",
+    "summary": "Reúnam pistas sobre fantasmas usando ferramentas de investigação paranormal.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/8fc6642a091321343695b2273f8f7137c5d26483/header_alt_assets_14.jpg?t=1795522435",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/739630/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Kinetic Games",
+    "store_checked": "2026-11-25T19:04:53+00:00",
+    "players": {
+      "count": 12432,
+      "consultado": "2026-11-25T19:04:53+00:00"
+    },
+    "reviews": {
+      "positive": 650321,
+      "negative": 37392,
+      "consultado": "2026-11-25T19:04:53+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1966720,
+    "title": "Lethal Company",
+    "genre": "Terror",
+    "mode": "Solo + Cooperativo",
+    "summary": "Recuperem sucata em luas abandonadas e tentem trazer todo mundo de volta à nave.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg?t=1775380053",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1966720/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Zeekerss",
+    "store_checked": "2026-11-25T19:04:53+00:00",
+    "players": {
+      "count": 2952,
+      "consultado": "2026-11-25T19:04:53+00:00"
+    },
+    "reviews": {
+      "positive": 399999,
+      "negative": 12420,
+      "consultado": "2026-11-25T19:04:53+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 322330,
+    "title": "Don't Starve Together",
+    "genre": "Sobrevivência",
+    "mode": "Solo + Cooperativo",
+    "summary": "Dividam comida, luz e abrigo para sobreviver à próxima estação.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/050ea9c51a4e96f707309d33b7cdd38e0a6cbfff/header_alt_assets_51.jpg?t=1793044716",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/322330/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Klei Entertainment",
+    "store_checked": "2026-11-25T19:04:53+00:00",
+    "players": {
+      "count": 14494,
+      "consultado": "2026-11-25T19:04:54+00:00"
+    },
+    "reviews": {
+      "positive": 360752,
+      "negative": 19349,
+      "consultado": "2026-11-25T19:04:54+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1217060,
+    "title": "Gunfire Reborn",
+    "genre": "Tiro e roguelike",
+    "mode": "Solo + Cooperativo",
+    "summary": "Combinações de armas e habilidades mudam cada expedição.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1217060/2d08f9361140dbcce54866752797ee9ad9c41ff5/header_alt_assets_0.jpg?t=1795483369",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1217060/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Gunfire Reborn Studio",
+    "store_checked": "2026-11-25T19:04:54+00:00",
+    "players": {
+      "count": 536,
+      "consultado": "2026-11-25T19:04:54+00:00"
+    },
+    "reviews": {
+      "positive": 82640,
+      "negative": 6129,
+      "consultado": "2026-11-25T19:04:54+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1794680,
+    "title": "Vampire Survivors",
+    "genre": "Sobrevivência",
+    "mode": "Solo + Cooperativo",
+    "summary": "Escolha as melhorias certas para sobreviver a uma tela cheia de monstros.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1794680/2ca07b690dde645771125ed9d9206c4c5fde4dd4/header.jpg?t=1794307910",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1794680/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "poncle",
+    "store_checked": "2026-11-25T19:04:54+00:00",
+    "players": {
+      "count": 2334,
+      "consultado": "2026-11-25T19:04:54+00:00"
+    },
+    "reviews": {
+      "positive": 249158,
+      "negative": 4174,
+      "consultado": "2026-11-25T19:04:54+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 413150,
+    "title": "Stardew Valley",
+    "genre": "Simulação",
+    "mode": "Solo + Cooperativo",
+    "summary": "Dividam as tarefas da fazenda ou passem o dia pescando e explorando minas.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1786554168",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413150/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": true,
+    "demos": [],
+    "developer": "ConcernedApe",
+    "store_checked": "2026-11-25T19:04:54+00:00",
+    "players": {
+      "count": 37926,
+      "consultado": "2026-11-25T19:04:55+00:00"
+    },
+    "reviews": {
+      "positive": 893545,
+      "negative": 13339,
+      "consultado": "2026-11-25T19:04:55+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1942280,
+    "title": "Brotato",
+    "genre": "Arena",
+    "mode": "Solo + Cooperativo",
+    "summary": "Monte uma combinação de seis armas e sobreviva a ondas cada vez maiores.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1942280/f98281910016f8924be37cce3d4b119f5223a358/header.jpg?t=1795596465",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1942280/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": false,
+    "local_coop": true,
+    "demos": [],
+    "developer": "Blobfish",
+    "store_checked": "2026-11-25T19:04:55+00:00",
+    "players": {
+      "count": 9732,
+      "consultado": "2026-11-25T19:04:55+00:00"
+    },
+    "reviews": {
+      "positive": 109682,
+      "negative": 4843,
+      "consultado": "2026-11-25T19:04:55+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 504230,
+    "title": "Celeste",
+    "genre": "Plataforma",
+    "mode": "Solo",
+    "summary": "Suba a montanha em salas curtas que colocam à prova cada salto.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/header.jpg?t=1714089525",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/504230/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Maddy Makes Games Inc., Extremely OK Games, Ltd.",
+    "store_checked": "2026-11-25T19:04:55+00:00",
+    "players": {
+      "count": 2156,
+      "consultado": "2026-11-25T19:04:55+00:00"
+    },
+    "reviews": {
+      "positive": 131289,
+      "negative": 3466,
+      "consultado": "2026-11-25T19:04:55+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1055540,
+    "title": "A Short Hike",
+    "genre": "Exploração",
+    "mode": "Solo",
+    "summary": "Faça uma trilha sem pressa e plane de volta pela ilha.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1055540/header.jpg?t=1777758958",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1055540/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "adamgryu",
+    "store_checked": "2026-11-25T19:04:55+00:00",
+    "players": {
+      "count": 45,
+      "consultado": "2026-11-25T19:04:56+00:00"
+    },
+    "reviews": {
+      "positive": 19409,
+      "negative": 166,
+      "consultado": "2026-11-25T19:04:56+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 653530,
+    "title": "Return of the Obra Dinn",
+    "genre": "Investigação",
+    "mode": "Solo",
+    "summary": "Reconstrua o destino de uma tripulação a partir de cenas congeladas no tempo.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/653530/header.jpg?t=1686697594",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/653530/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Lucas Pope",
+    "store_checked": "2026-11-25T19:04:56+00:00",
+    "players": {
+      "count": 121,
+      "consultado": "2026-11-25T19:04:56+00:00"
+    },
+    "reviews": {
+      "positive": 31919,
+      "negative": 1128,
+      "consultado": "2026-11-25T19:04:56+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 2198150,
+    "title": "Tiny Glade",
+    "genre": "Construção",
+    "mode": "Solo",
+    "summary": "Desenhe casas e ruas de uma cidade medieval no seu próprio ritmo.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2198150/header.jpg?t=1794648953",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2198150/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [
+      2932580
+    ],
+    "developer": "Pounce Light",
+    "store_checked": "2026-11-25T19:04:56+00:00",
+    "players": {
+      "count": 264,
+      "consultado": "2026-11-25T19:04:56+00:00"
+    },
+    "reviews": {
+      "positive": 22556,
+      "negative": 635,
+      "consultado": "2026-11-25T19:04:56+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1455840,
+    "title": "Dorfromantik",
+    "genre": "Estratégia",
+    "mode": "Solo",
+    "summary": "Encaixe peças de paisagem e conecte florestas, vilas e rios.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/header.jpg?t=1786951108",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1455840/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Toukana Interactive",
+    "store_checked": "2026-11-25T19:04:56+00:00",
+    "players": {
+      "count": 460,
+      "consultado": "2026-11-25T19:04:56+00:00"
+    },
+    "reviews": {
+      "positive": 26622,
+      "negative": 960,
+      "consultado": "2026-11-25T19:04:57+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1812820,
+    "title": "Bitburner",
+    "genre": "Programação",
+    "mode": "Solo",
+    "summary": "Escreva scripts para automatizar tarefas em um mundo de ficção.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1812820/header.jpg?t=1789489545",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1812820/library_hero.jpg",
+    "indie": false,
+    "free": true,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Fulcrum Games, Hydroflame, over 250 github contributors",
+    "store_checked": "2026-11-25T19:04:57+00:00",
+    "players": {
+      "count": 474,
+      "consultado": "2026-11-25T19:04:57+00:00"
+    },
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:04:57+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1070710,
+    "title": "Kind Words (lo fi chill beats to write to)",
+    "genre": "Relaxante",
+    "mode": "Solo + Cooperativo",
+    "summary": "Escreva pequenas cartas de apoio e receba mensagens de outros jogadores ao som de lo-fi.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1070710/header.jpg?t=1733943033",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1070710/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Popcannibal",
+    "store_checked": "2026-11-25T19:04:57+00:00",
+    "players": {
+      "count": 3,
+      "consultado": "2026-11-25T19:04:57+00:00"
+    },
+    "reviews": {
+      "positive": 8771,
+      "negative": 165,
+      "consultado": "2026-11-25T19:04:57+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 599390,
+    "title": "Battle for Wesnoth",
+    "genre": "Estratégia",
+    "mode": "Solo",
+    "summary": "Comande exércitos em mapas hexagonais, em campanhas ou partidas com amigos.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/599390/header.jpg?t=1713205573",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/599390/library_hero.jpg",
+    "indie": true,
+    "free": true,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "The Battle for Wesnoth Project",
+    "store_checked": "2026-11-25T19:04:57+00:00",
+    "players": {
+      "count": 203,
+      "consultado": "2026-11-25T19:04:57+00:00"
+    },
+    "reviews": {
+      "positive": 5714,
+      "negative": 351,
+      "consultado": "2026-11-25T19:04:58+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1809540,
+    "title": "Nine Sols",
+    "genre": "Ação",
+    "mode": "Solo",
+    "summary": "Alterne defesas precisas e ataques num mundo inspirado na mitologia asiática.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/header.jpg?t=1782464830",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1809540/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "RedCandleGames",
+    "store_checked": "2026-11-25T19:04:58+00:00",
+    "players": {
+      "count": 557,
+      "consultado": "2026-11-25T19:04:58+00:00"
+    },
+    "reviews": {
+      "positive": 39244,
+      "negative": 2269,
+      "consultado": "2026-11-25T19:04:58+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 2231450,
+    "title": "Pizza Tower",
+    "genre": "Plataforma",
+    "mode": "Solo + Cooperativo",
+    "summary": "Dispare por fases desenhadas à mão em busca das melhores pontuações.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2231450/header.jpg?t=1732516978",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2231450/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": false,
+    "local_coop": true,
+    "demos": [],
+    "developer": "Tour De Pizza",
+    "store_checked": "2026-11-25T19:04:58+00:00",
+    "players": {
+      "count": 381,
+      "consultado": "2026-11-25T19:04:58+00:00"
+    },
+    "reviews": {
+      "positive": 65897,
+      "negative": 1101,
+      "consultado": "2026-11-25T19:04:58+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1202200,
+    "title": "Paleo Pines",
+    "genre": "Simulação",
+    "mode": "Solo",
+    "summary": "Cuide de uma fazenda e faça amizade com dinossauros.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1202200/header.jpg?t=1793620857",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1202200/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [
+      2296430
+    ],
+    "developer": "Italic Pig",
+    "store_checked": "2026-11-25T19:04:58+00:00",
+    "players": {
+      "count": 31,
+      "consultado": "2026-11-25T19:04:58+00:00"
+    },
+    "reviews": {
+      "positive": 1785,
+      "negative": 275,
+      "consultado": "2026-11-25T19:04:59+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1092790,
+    "title": "Inscryption",
+    "genre": "Estratégia",
+    "mode": "Solo",
+    "summary": "Use cartas e observe os objetos da cabana para entender suas regras.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1092790/header.jpg?t=1777572925",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1092790/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [
+      1753260
+    ],
+    "developer": "Daniel Mullins Games",
+    "store_checked": "2026-11-25T19:04:58+00:00",
+    "players": {
+      "count": 973,
+      "consultado": "2026-11-25T19:04:59+00:00"
+    },
+    "reviews": {
+      "positive": 132324,
+      "negative": 4359,
+      "consultado": "2026-11-25T19:04:59+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1985690,
+    "title": "The Looker",
+    "genre": "Quebra-cabeça",
+    "mode": "Solo",
+    "summary": "Resolva painéis de labirinto numa ilha que brinca com as convenções dos jogos de enigmas.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1985690/header.jpg?t=1663378276",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1985690/library_hero.jpg",
+    "indie": true,
+    "free": true,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Subcreation Studio",
+    "store_checked": "2026-11-25T19:04:59+00:00",
+    "players": {
+      "count": 10,
+      "consultado": "2026-11-25T19:04:59+00:00"
+    },
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:04:59+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1814170,
+    "title": "Lingo",
+    "genre": "Quebra-cabeça",
+    "mode": "Solo",
+    "summary": "Procure padrões e símbolos em um mundo feito de painéis.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1814170/header.jpg?t=1769452915",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1814170/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Brenton Wildes",
+    "store_checked": "2026-11-25T19:04:59+00:00",
+    "players": {
+      "count": 16,
+      "consultado": "2026-11-25T19:04:59+00:00"
+    },
+    "reviews": {
+      "positive": 596,
+      "negative": 37,
+      "consultado": "2026-11-25T19:05:00+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1313140,
+    "title": "Cult of the Lamb",
+    "genre": "Gestão e ação",
+    "mode": "Solo + Cooperativo",
+    "summary": "Alterne expedições e a administração de uma comunidade de seguidores.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/19f32bb477a6e9d058e05193b4e282149bd70644/header.jpg?t=1786554901",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1313140/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": false,
+    "local_coop": true,
+    "demos": [],
+    "developer": "Massive Monster",
+    "store_checked": "2026-11-25T19:04:59+00:00",
+    "players": {
+      "count": 1895,
+      "consultado": "2026-11-25T19:05:00+00:00"
+    },
+    "reviews": {
+      "positive": 109088,
+      "negative": 4777,
+      "consultado": "2026-11-25T19:05:00+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1102190,
+    "title": "Monster Train",
+    "genre": "Estratégia",
+    "mode": "Solo",
+    "summary": "Proteja os vagões de um trem combinando cartas e criaturas.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1102190/header.jpg?t=1779381275",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1102190/library_hero.jpg",
+    "indie": false,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Shiny Shoe",
+    "store_checked": "2026-11-25T19:05:00+00:00",
+    "players": {
+      "count": 97,
+      "consultado": "2026-11-25T19:05:00+00:00"
+    },
+    "reviews": {
+      "positive": 19196,
+      "negative": 809,
+      "consultado": "2026-11-25T19:05:00+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1127400,
+    "title": "Mindustry",
+    "genre": "Automação",
+    "mode": "Solo + Cooperativo",
+    "summary": "Monte linhas de produção para abastecer torres durante ondas inimigas.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1127400/98714db25e9ef5a6ea3d39cd0709a60aae41e8dd/header.jpg?t=1784823019",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1127400/library_hero.jpg",
+    "indie": false,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "AnukenDev",
+    "store_checked": "2026-11-25T19:05:00+00:00",
+    "players": {
+      "count": 875,
+      "consultado": "2026-11-25T19:05:00+00:00"
+    },
+    "reviews": {
+      "positive": 24166,
+      "negative": 1059,
+      "consultado": "2026-11-25T19:05:01+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 105600,
+    "title": "Terraria",
+    "genre": "Sobrevivência",
+    "mode": "Solo + Cooperativo",
+    "summary": "Cavem túneis, construam bases e enfrentem chefes em um mundo de blocos.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1792530636",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/105600/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Re-Logic",
+    "store_checked": "2026-11-25T19:05:00+00:00",
+    "players": {
+      "count": 23264,
+      "consultado": "2026-11-25T19:05:01+00:00"
+    },
+    "reviews": {
+      "positive": 1221341,
+      "negative": 30818,
+      "consultado": "2026-11-25T19:05:01+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 391540,
+    "title": "Undertale",
+    "genre": "RPG",
+    "mode": "Solo",
+    "summary": "Escolha como lidar com cada encontro em uma jornada subterrânea.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/header.jpg?t=1757349115",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/391540/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "tobyfox",
+    "store_checked": "2026-11-25T19:05:00+00:00",
+    "players": {
+      "count": 1430,
+      "consultado": "2026-11-25T19:05:01+00:00"
+    },
+    "reviews": {
+      "positive": 303796,
+      "negative": 10670,
+      "consultado": "2026-11-25T19:05:01+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1671210,
+    "title": "DELTARUNE",
+    "genre": "RPG",
+    "mode": "Solo",
+    "summary": "Explore mundos paralelos em uma aventura com batalhas por turnos.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1671210/7ccda5b1631d2e60cc756a3271e845dbb9168821/header.jpg?t=1782314340",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1671210/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [
+      1690940
+    ],
+    "developer": "tobyfox",
+    "store_checked": "2026-11-25T19:05:01+00:00",
+    "players": {
+      "count": 2097,
+      "consultado": "2026-11-25T19:05:01+00:00"
+    },
+    "reviews": {
+      "positive": 2804,
+      "negative": 31,
+      "consultado": "2026-11-25T19:05:02+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 230410,
+    "title": "Warframe",
+    "genre": "Ação",
+    "mode": "Solo + Cooperativo",
+    "summary": "Monte seu equipamento e complete missões em equipe no sistema solar.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1794847104",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/230410/library_hero.jpg",
+    "indie": false,
+    "free": true,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Digital Extremes",
+    "store_checked": "2026-11-25T19:05:02+00:00",
+    "players": {
+      "count": 45334,
+      "consultado": "2026-11-25T19:05:02+00:00"
+    },
+    "reviews": {
+      "positive": 600636,
+      "negative": 83268,
+      "consultado": "2026-11-25T19:05:02+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 304930,
+    "title": "Unturned",
+    "genre": "Sobrevivência",
+    "mode": "Solo + Cooperativo",
+    "summary": "Procurem suprimentos e construam uma base em meio a um surto de zumbis.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304930/161ec2d6ace8a03afdb7a423510ff8f7d8b301ba/header.jpg?t=1783436894",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304930/library_hero.jpg",
+    "indie": true,
+    "free": true,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Smartly Dressed Games",
+    "store_checked": "2026-11-25T19:05:01+00:00",
+    "players": {
+      "count": 15119,
+      "consultado": "2026-11-25T19:05:02+00:00"
+    },
+    "reviews": {
+      "positive": 514462,
+      "negative": 50867,
+      "consultado": "2026-11-25T19:05:02+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1714040,
+    "title": "Super Auto Pets",
+    "genre": "Estratégia",
+    "mode": "Multijogador",
+    "summary": "Monte uma equipe de animais com habilidades que se completam.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1714040/header.jpg?t=1794573220",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1714040/library_hero.jpg",
+    "indie": false,
+    "free": true,
+    "solo": false,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Team Wood Games",
+    "store_checked": "2026-11-25T19:05:02+00:00",
+    "players": {
+      "count": 282,
+      "consultado": "2026-11-25T19:05:02+00:00"
+    },
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:05:03+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1435790,
+    "title": "Escape Simulator",
+    "genre": "Enigmas",
+    "mode": "Solo + Cooperativo",
+    "summary": "Investiguem salas e combinem pistas para encontrar a saída.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1435790/413708a2da512607f70bb22b29270359586c6e5f/header.jpg?t=1795254692",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1435790/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Pine Studio",
+    "store_checked": "2026-11-25T19:05:02+00:00",
+    "players": {
+      "count": 255,
+      "consultado": "2026-11-25T19:05:03+00:00"
+    },
+    "reviews": {
+      "positive": 15663,
+      "negative": 996,
+      "consultado": "2026-11-25T19:05:03+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 477160,
+    "title": "Human Fall Flat",
+    "genre": "Física",
+    "mode": "Solo + Cooperativo",
+    "summary": "Movam objetos e combinem os movimentos dos bonecos para superar obstáculos.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/477160/b16de9cf3f8e40c23a3587809578fd36aa7f7efd/header_alt_assets_27_brazilian.jpg?t=1793018738",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/477160/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": false,
+    "local_coop": true,
+    "demos": [],
+    "developer": "No Brakes Games",
+    "store_checked": "2026-11-25T19:05:03+00:00",
+    "players": {
+      "count": 795,
+      "consultado": "2026-11-25T19:05:03+00:00"
+    },
+    "reviews": {
+      "positive": 166613,
+      "negative": 9537,
+      "consultado": "2026-11-25T19:05:03+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 563560,
+    "title": "Alien Swarm: Reactive Drop",
+    "genre": "Ação tática",
+    "mode": "Solo + Cooperativo",
+    "summary": "Cubram os corredores em equipe para sobreviver aos enxames alienígenas.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/563560/header.jpg?t=1784424220",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/563560/library_hero.jpg",
+    "indie": false,
+    "free": true,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Reactive Drop Team",
+    "store_checked": "2026-11-25T19:05:03+00:00",
+    "players": {
+      "count": 116,
+      "consultado": "2026-11-25T19:05:03+00:00"
+    },
+    "reviews": {
+      "positive": 22697,
+      "negative": 1215,
+      "consultado": "2026-11-25T19:05:04+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 225840,
+    "title": "Sven Co-op",
+    "genre": "Tiro em equipe",
+    "mode": "Solo + Cooperativo",
+    "summary": "Enfrentem missões criadas para cooperação no universo de Half-Life.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225840/header.jpg?t=1794376667",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/225840/library_hero.jpg",
+    "indie": true,
+    "free": true,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Sven Co-op team",
+    "store_checked": "2026-11-25T19:05:03+00:00",
+    "players": {
+      "count": 216,
+      "consultado": "2026-11-25T19:05:03+00:00"
+    },
+    "reviews": {
+      "positive": 30538,
+      "negative": 2108,
+      "consultado": "2026-11-25T19:05:04+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 224260,
+    "title": "No More Room in Hell",
+    "genre": "Sobrevivência",
+    "mode": "Cooperativo",
+    "summary": "Dividam as últimas balas e abram caminho por mapas tomados por zumbis.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/224260/header.jpg?t=1696263772",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/224260/library_hero.jpg",
+    "indie": true,
+    "free": true,
+    "solo": false,
+    "coop": true,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "No More Room in Hell Team",
+    "store_checked": "2026-11-25T19:05:04+00:00",
+    "players": {
+      "count": 408,
+      "consultado": "2026-11-25T19:05:04+00:00"
+    },
+    "reviews": {
+      "positive": 69228,
+      "negative": 7804,
+      "consultado": "2026-11-25T19:05:04+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1625450,
+    "title": "Muck",
+    "genre": "Sobrevivência",
+    "mode": "Solo + Cooperativo",
+    "summary": "Coletem madeira durante o dia e defendam o acampamento ao anoitecer.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1625450/header.jpg?t=1625163481",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1625450/library_hero.jpg",
+    "indie": true,
+    "free": true,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Dani",
+    "store_checked": "2026-11-25T19:05:04+00:00",
+    "players": {
+      "count": 626,
+      "consultado": "2026-11-25T19:05:04+00:00"
+    },
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:05:04+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 461040,
+    "title": "PICO PARK:Classic Edition",
+    "genre": "Plataforma",
+    "mode": "Cooperativo",
+    "summary": "Formem escadas com os próprios personagens para levar o grupo até a chave.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/461040/6f1570451e61751e3995d42fa7d7f31f90756db0/header.jpg?t=1781624101",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/461040/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": false,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": true,
+    "demos": [],
+    "developer": "TECOPARK",
+    "store_checked": "2026-11-25T19:05:04+00:00",
+    "players": {
+      "count": 20,
+      "consultado": "2026-11-25T19:05:04+00:00"
+    },
+    "reviews": {
+      "positive": 1095,
+      "negative": 418,
+      "consultado": "2026-11-25T19:05:05+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1686940,
+    "title": "Bopl Battle",
+    "genre": "Arena",
+    "mode": "Cooperativo",
+    "summary": "Misture habilidades e física em duelos de pequenas criaturas gelatinosas.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1686940/header.jpg?t=1746784732",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1686940/library_hero.jpg",
+    "indie": false,
+    "free": false,
+    "solo": false,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": true,
+    "demos": [
+      2494960
+    ],
+    "developer": "Johan Grönvall",
+    "store_checked": "2026-11-25T19:05:04+00:00",
+    "players": {
+      "count": 311,
+      "consultado": "2026-11-25T19:05:05+00:00"
+    },
+    "reviews": {
+      "positive": 21385,
+      "negative": 597,
+      "consultado": "2026-11-25T19:05:05+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1170880,
+    "title": "Grimm's Hollow",
+    "genre": "RPG",
+    "mode": "Solo",
+    "summary": "Uma jovem ceifadora procura o irmão num mundo povoado por fantasmas.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1170880/header.jpg?t=1630243141",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1170880/library_hero.jpg",
+    "indie": true,
+    "free": true,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "ghosthunter",
+    "store_checked": "2026-11-25T19:05:05+00:00",
+    "players": {
+      "count": 1,
+      "consultado": "2026-11-25T19:05:05+00:00"
+    },
+    "reviews": {
+      "positive": 14480,
+      "negative": 216,
+      "consultado": "2026-11-25T19:05:05+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1568400,
+    "title": "Sheepy: A Short Adventure",
+    "genre": "Plataforma",
+    "mode": "Solo",
+    "summary": "Guie uma pequena ovelha de pelúcia por um subterrâneo abandonado.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1568400/header.jpg?t=1790792963",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1568400/library_hero.jpg",
+    "indie": true,
+    "free": true,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "MrSuicideSheep",
+    "store_checked": "2026-11-25T19:05:05+00:00",
+    "players": {
+      "count": 49,
+      "consultado": "2026-11-25T19:05:05+00:00"
+    },
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:05:05+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 312990,
+    "title": "The Expendabros",
+    "genre": "Ação",
+    "mode": "Solo",
+    "summary": "Abram caminho por cenários destrutíveis com um esquadrão de heróis de ação.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312990/header.jpg?t=1728689916",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/312990/library_hero.jpg",
+    "indie": true,
+    "free": true,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Free Lives",
+    "store_checked": "2026-11-25T19:05:05+00:00",
+    "players": {
+      "count": 10,
+      "consultado": "2026-11-25T19:05:06+00:00"
+    },
+    "reviews": {
+      "positive": 17754,
+      "negative": 506,
+      "consultado": "2026-11-25T19:05:06+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 1382070,
+    "title": "Viewfinder",
+    "genre": "Quebra-cabeça",
+    "mode": "Solo",
+    "summary": "Posicione fotografias no cenário para transformar uma imagem em caminho.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1382070/a69eb56f73446624325dec8a4fe74dc4ae09fb96/header.jpg?t=1764842475",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1382070/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [],
+    "developer": "Sad Owl Studios",
+    "store_checked": "2026-11-25T19:05:06+00:00",
+    "players": {
+      "count": 35,
+      "consultado": "2026-11-25T19:05:06+00:00"
+    },
+    "reviews": {
+      "positive": 8015,
+      "negative": 490,
+      "consultado": "2026-11-25T19:05:06+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 2163330,
+    "title": "Yet Another Zombie Survivors",
+    "genre": "Sobrevivência",
+    "mode": "Solo",
+    "summary": "Escolha melhorias para o esquadrão enquanto as hordas cercam a equipe.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2163330/d14101ee67beb9c952fd8e38ec015777356430a0/header.jpg?t=1792445075",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2163330/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [
+      2265230
+    ],
+    "developer": "Awesome Games Studio",
+    "store_checked": "2026-11-25T19:05:06+00:00",
+    "players": {
+      "count": 595,
+      "consultado": "2026-11-25T19:05:06+00:00"
+    },
+    "reviews": {
+      "positive": 13742,
+      "negative": 1273,
+      "consultado": "2026-11-25T19:05:06+00:00"
+    },
+    "from_feed": false
+  },
+  {
+    "id": 5288990,
+    "title": "Two Happy Geese",
+    "genre": "Ação",
+    "mode": "Solo",
+    "summary": "Two Happy Geese é um jogo de plataforma 2D em pixel art sobre um ganso branco que parte para resgatar o irmão sequestrado. Avance por fases variadas, enfrente inimigos e chefes e use todas as armas que encontrar pelo caminho.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5288990/114a3ecc547f7da9fa4d8adb6e53809f1a7fce8d/header.jpg?t=1795631098",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5288990/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [
+      5565400
+    ],
+    "developer": "Kill.dev",
+    "store_checked": "2026-11-25T19:05:06+00:00",
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:05:07+00:00"
+    },
+    "from_feed": true
+  },
+  {
+    "id": 5262690,
+    "title": "Sacrificium",
+    "genre": "Indie",
+    "mode": "Solo",
+    "summary": "Turn-based roguelike. Every creature carries a trait you can only claim by sacrificing it at the altar. Stack traits into a build, watch your team shrink, and reach the final fight with nothing left to spend. Power is always subtraction.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5262690/27b168956e901d4710e583bd3dfcaeba13750602/header.jpg?t=1790039271",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5262690/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [
+      5517830
+    ],
+    "developer": "SeedWall",
+    "store_checked": "2026-11-25T19:05:07+00:00",
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:05:07+00:00"
+    },
+    "from_feed": true
+  },
+  {
+    "id": 5506130,
+    "title": "Americana: The Dead Years",
+    "genre": "Ação",
+    "mode": "Solo",
+    "summary": "Enfrente zumbis e sobreviventes hostis em um sandbox de sobrevivência em voxels e em primeira pessoa. Vasculhe cidades devastadas, conserte veículos e abra caminho por construções destrutíveis. Construa um lar, reconstrua pontes, cace, pesque e cultive para sobreviver.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5506130/890e5f37505d3233b6f4147d91a678230fa196f5/header.jpg?t=1795628959",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5506130/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [
+      5570620
+    ],
+    "developer": "BitQuest Studio",
+    "store_checked": "2026-11-25T19:05:07+00:00",
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:05:07+00:00"
+    },
+    "from_feed": true
+  },
+  {
+    "id": 5400000,
+    "title": "Upstart Tycoon",
+    "genre": "Casual",
+    "mode": "Solo",
+    "summary": "An incremental tycoon about getting rich in a crooked city. Play as a thief, a dirty cop, a 9–5 worker or a suburban teen, and climb from nobody to the person Port Vesper can't function without. Every run, the city you left behind has changed.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5400000/7715e32a6fa418cf3e00055a15de4ac7ac8ed0a8/header.jpg?t=1795627377",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5400000/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [
+      5532140
+    ],
+    "developer": "Heavy Eyes",
+    "store_checked": "2026-11-25T19:05:07+00:00",
+    "players": {
+      "count": 1,
+      "consultado": "2026-11-25T19:05:08+00:00"
+    },
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:05:08+00:00"
+    },
+    "from_feed": true
+  },
+  {
+    "id": 4962440,
+    "title": "Pass the Blunt",
+    "genre": "Casual",
+    "mode": "Solo",
+    "summary": "One blunt. A deck full of Bad Trips. Friends you can't trust. Pass the Blunt is a party card game for 2 to 6 players where holding the blunt makes your cards hit harder and your problems twice as big. Last one standing wins.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4962440/1e9ec026477cacc6d809b2a8ea5c8fbb6deafe0d/header.jpg?t=1795626326",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4962440/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [
+      5646130
+    ],
+    "developer": "MuStudios",
+    "store_checked": "2026-11-25T19:05:08+00:00",
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:05:09+00:00"
+    },
+    "from_feed": true
+  },
+  {
+    "id": 4252280,
+    "title": "Quack Hunters",
+    "genre": "Ação",
+    "mode": "Solo + Cooperativo",
+    "summary": "Um simulador de caça baseado em física para 1 a 4 jogadores. Alienígenas abduziram a querida cabra do seu avô e irradiaram todo o resto da floresta. Para trazer essa cabra para casa, você vai ter que pegar uma arma e se tornar um verdadeiro Quack Hunter.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4252280/d628f9b074dec18334867b3d55fe425fa252aca6/header.jpg?t=1795625178",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4252280/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [
+      4264980
+    ],
+    "developer": "Vampire Squid",
+    "store_checked": "2026-11-25T19:05:08+00:00",
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:05:08+00:00"
+    },
+    "from_feed": true
+  },
+  {
+    "id": 3440990,
+    "title": "Topple",
+    "genre": "Casual",
+    "mode": "Solo",
+    "summary": "Line up your dominoes and push. Every tile that topples hits the enemies beside it, and long chains multiply the damage. Hold back enemies from the right, cross frozen and collapsing boards, and topple every act's boss. 3 characters, 15 tile types, 45 relics, dailies, Endless, and more beyond Act 3.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3440990/93e8aa74aeff8d72f5144d5d5063b7bd9161c4c5/header.jpg?t=1794411668",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3440990/library_hero.jpg",
+    "indie": true,
+    "free": false,
+    "solo": true,
+    "coop": false,
+    "online_coop": false,
+    "local_coop": false,
+    "demos": [
+      5511340
+    ],
+    "developer": "unicorn",
+    "store_checked": "2026-11-25T19:05:08+00:00",
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:05:09+00:00"
+    },
+    "from_feed": true
+  },
+  {
+    "id": 4431890,
+    "title": "Barely Developers",
+    "genre": "Casual",
+    "mode": "Solo + Cooperativo",
+    "summary": "Comece um estúdio de jogos na garagem da sua mãe neste tycoon em primeira pessoa. Crie e publique jogos, decore seu escritório, contrate funcionários imprevisíveis e vá de desenvolvedor indie falido a estúdio AAA. Jogue sozinho ou com até 3 amigos, só não deixe a mamãe puxar o plugue.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4431890/c05f2f72e90c6f498d26da8082681b52e345e819/header.jpg?t=1795545406",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4431890/library_hero.jpg",
+    "indie": false,
+    "free": false,
+    "solo": true,
+    "coop": true,
+    "online_coop": true,
+    "local_coop": false,
+    "demos": [
+      5406130
+    ],
+    "developer": "RAKTWO Games",
+    "store_checked": "2026-11-25T19:05:09+00:00",
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T19:05:10+00:00"
+    },
+    "from_feed": true
   }
 ]
