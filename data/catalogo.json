@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1145350,
+    "title": "Hades II",
+    "genre": "Roguelike",
+    "mode": "Solo",
+    "summary": "Enfrente o titã do tempo numa sequência de combates, feitiços e novas tentativas.",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145350/header.jpg",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1145350/library_hero.jpg",
+    "players": {
+      "count": 3148,
+      "consultado": "2026-11-25T18:49:16+00:00"
+    },
+    "reviews": {
+      "positive": 111392,
+      "negative": 5013,
+      "consultado": "2026-11-25T18:49:16+00:00"
+    }
+  },
+  {
+    "id": 548430,
+    "title": "Deep Rock Galactic",
+    "genre": "Tiro em equipe",
+    "mode": "Cooperativo",
+    "summary": "Quatro anões, uma missão de mineração e cavernas que mudam a cada descida.",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/548430/header.jpg",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/548430/library_hero.jpg",
+    "players": {
+      "count": 5486,
+      "consultado": "2026-11-25T18:49:18+00:00"
+    },
+    "reviews": {
+      "positive": 297446,
+      "negative": 8263,
+      "consultado": "2026-11-25T18:49:18+00:00"
+    }
+  },
+  {
+    "id": 2379780,
+    "title": "Balatro",
+    "genre": "Estratégia",
+    "mode": "Solo",
+    "summary": "Combine curingas e mãos de pôquer para quebrar o placar da próxima rodada.",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/header.jpg",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2379780/library_hero.jpg",
+    "players": {
+      "count": 6900,
+      "consultado": "2026-11-25T18:49:20+00:00"
+    },
+    "reviews": {
+      "positive": 159918,
+      "negative": 3554,
+      "consultado": "2026-11-25T18:49:20+00:00"
+    }
+  },
+  {
+    "id": 753640,
+    "title": "Outer Wilds",
+    "genre": "Exploração",
+    "mode": "Solo",
+    "summary": "Explore um sistema solar preso em um ciclo de 22 minutos. Cada descoberta muda sua próxima viagem.",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/header.jpg",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/753640/library_hero.jpg",
+    "players": {
+      "count": 1194,
+      "consultado": "2026-11-25T18:49:22+00:00"
+    },
+    "reviews": {
+      "positive": 87612,
+      "negative": 4128,
+      "consultado": "2026-11-25T18:49:22+00:00"
+    }
+  },
+  {
+    "id": 1030300,
+    "title": "Hollow Knight: Silksong",
+    "genre": "Aventura",
+    "mode": "Solo",
+    "summary": "Suba por um reino de seda e canções com a agulha e a agilidade de Hornet.",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030300/header.jpg",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030300/library_hero.jpg",
+    "players": {
+      "count": 6690,
+      "consultado": "2026-11-25T18:49:23+00:00"
+    },
+    "reviews": {
+      "positive": 0,
+      "negative": 0,
+      "consultado": "2026-11-25T18:49:24+00:00"
+    }
+  },
+  {
+    "id": 632360,
+    "title": "Risk of Rain 2",
+    "genre": "Roguelike",
+    "mode": "Cooperativo",
+    "summary": "Sobreviva a um planeta que fica mais hostil a cada minuto, sozinho ou em equipe.",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632360/header.jpg",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632360/library_hero.jpg",
+    "players": {
+      "count": 6830,
+      "consultado": "2026-11-25T18:49:25+00:00"
+    },
+    "reviews": {
+      "positive": 228397,
+      "negative": 14803,
+      "consultado": "2026-11-25T18:49:25+00:00"
+    }
+  },
+  {
+    "id": 892970,
+    "title": "Valheim",
+    "genre": "Sobrevivência",
+    "mode": "Cooperativo",
+    "summary": "Construa um abrigo e atravesse mares desconhecidos com seu grupo de vikings.",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/892970/header.jpg",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/892970/library_hero.jpg",
+    "players": {
+      "count": 37458,
+      "consultado": "2026-11-25T18:49:27+00:00"
+    },
+    "reviews": {
+      "positive": 457605,
+      "negative": 30880,
+      "consultado": "2026-11-25T18:49:27+00:00"
+    }
+  },
+  {
+    "id": 646570,
+    "title": "Slay the Spire",
+    "genre": "Estratégia",
+    "mode": "Solo",
+    "summary": "Monte um baralho carta por carta enquanto escolhe sua rota até o topo da torre.",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg",
+    "hero": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/646570/library_hero.jpg",
+    "players": {
+      "count": 4167,
+      "consultado": "2026-11-25T18:49:28+00:00"
+    },
+    "reviews": {
+      "positive": 188734,
+      "negative": 4983,
+      "consultado": "2026-11-25T18:49:29+00:00"
+    }
+  }
+]

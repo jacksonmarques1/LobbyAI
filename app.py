@@ -1,105 +1,122 @@
 import json
-from urllib.error import URLError
+from datetime import datetime, timedelta, timezone
+from html import escape
+from urllib.parse import quote, urlencode
 
-import joblib
-import pandas as pd
 import streamlit as st
 
-from corpus import LABELS, ROOT, clean, load_reviews
+from catalogo import ROOT, SNAPSHOT
 
-st.set_page_config(page_title="LobbyAI · Avaliações da Steam", page_icon="🎮", layout="centered")
-st.markdown("""<style>
-.block-container {max-width: 54rem; padding-top: 2.7rem;}
-h1 {letter-spacing: -.055em;}
-[data-baseweb="tab-list"] {gap: 1rem;}
-[data-testid="stForm"] {background: white;}
-</style>""", unsafe_allow_html=True)
-st.title("LobbyAI")
-st.write("Dá pra adivinhar o voto de um jogador só pelo comentário?")
+st.set_page_config(page_title="LobbyAI — Descobrir jogos", page_icon="🕹️", layout="wide")
+st.html("<style>" + (ROOT / "interface.css").read_text("utf-8") + "</style>")
+games = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
+by_id = {str(g["id"]): g for g in games}
+ranked = sorted((g for g in games if g.get("players")), key=lambda g: -g["players"]["count"])
+page = st.query_params.get("pagina", "descobrir")
 
 
-@st.cache_resource
-def load_model():
-    return joblib.load(ROOT / "models" / "lobbyai.joblib")
+def link(**query):
+    return "?" + escape(urlencode(query), quote=True)
 
 
-@st.cache_data
-def demo_reviews():
-    return load_reviews().set_index("id").texto
+def local_time(value):
+    return datetime.fromisoformat(value).astimezone(timezone(timedelta(hours=-4))).strftime("%d/%m · %Hh%M")
 
 
-try:
-    model = load_model()
-    report = json.loads((ROOT / "reports" / "metricas.json").read_text(encoding="utf-8"))
-except (OSError, ValueError, EOFError, KeyError, ImportError) as exc:
-    st.error("Não foi possível abrir o modelo ou o relatório. Execute python train.py na pasta do projeto.")
-    st.stop()
-
-best = report["escolhido"]
-score = report["modelos"][best]
-tab_review, tab_demo, tab_scores = st.tabs(["Analisar comentário", "Teste às cegas", "Resultados"])
+def fmt(value):
+    return f"{value:,}".replace(",", ".")
 
 
-def show_prediction(text):
-    prediction = int(model.predict([text])[0])
-    st.subheader("Provavelmente recomendou 👍" if prediction else "Provavelmente não recomendou 👎")
-    st.caption("Previsão do modelo para o voto de quem escreveu.")
+def art(g, kind):
+    file = f"{g['id']}-{kind}.webp"
+    return f"app/static/art/{file}" if (ROOT / "static/art" / file).is_file() else escape(g[kind], quote=True)
 
 
-with tab_review:
-    with st.form("review"):
-        review = st.text_area("O que o jogador escreveu?", height=140,
-                              placeholder="Ex.: Terminei a campanha ontem e já comecei outra com meus amigos.")
-        submitted = st.form_submit_button("Analisar comentário", type="primary")
-    if submitted:
-        text = clean(review)
-        if not text or not any(letter.isalpha() for letter in text):
-            st.warning("Escreva uma avaliação em português antes de analisar.")
-        elif model.named_steps["texto"].transform([text]).nnz == 0:
-            st.warning("O modelo não reconheceu palavras nesse comentário. Tente descrever sua experiência no jogo.")
-        else:
-            show_prediction(text)
-    st.caption(f"Protótipo educacional · {best} · {score['acertos']} acertos em {report['teste']} avaliações de teste.")
+def votes(g):
+    r = g.get("reviews", {})
+    total = r.get("positive", 0) + r.get("negative", 0)
+    return (round(r["positive"] * 100 / total), total) if total else (None, 0)
 
-with tab_demo:
-    st.subheader("Qual foi o voto?")
-    st.write("Leia uma avaliação reservada para o teste, dê seu palpite e revele o voto do jogador.")
-    if "show_cases" not in st.session_state:
-        st.session_state.show_cases = False
-    if not st.session_state.show_cases:
-        if st.button("Carregar avaliações", help="Na primeira vez, os textos são baixados da base pública da pesquisa."):
-            st.session_state.show_cases = True
-            st.rerun()
-    if st.session_state.show_cases:
-        try:
-            reviews = demo_reviews()
-        except (OSError, URLError, ValueError):
-            st.info("Não foi possível ler a base. Conecte-se à internet na primeira execução ou rode python train.py.")
-        else:
-            cases = report["demonstracao"]
-            selected = st.radio("Avaliação", range(len(cases)), format_func=lambda i: f"Caso {i + 1}", horizontal=True)
-            case = cases[selected]
-            original = reviews.at[case["id"]]
-            st.text(original)
-            if st.button("Revelar previsão e voto", key=f"revelar_{selected}"):
-                show_prediction(original)
-                st.write(f"**Voto real do jogador:** {LABELS[case['voto']]}.")
 
-with tab_scores:
-    st.subheader("Como os modelos se saíram")
-    st.write(f"O treino usou {report['treino']} avaliações. Outras {report['teste']} ficaram reservadas para o teste.")
+def feedback(g):
+    pct, _ = votes(g)
+    return f"{pct}% positivas" if pct is not None else "Avaliações indisponíveis"
+
+
+def nav():
+    entries = [("descobrir", "Descobrir"), ("ranking", "Ranking"), ("laboratorio", "Laboratório")]
+    active = "descobrir" if page == "jogo" else page
+    tabs = "".join(f'<a href="{link(pagina=k)}" target="_self" aria-current="{("page" if active == k else "false")}">{label}</a>' for k, label in entries)
+    st.html(f'<div class="lobby"><header class="top"><a class="brand" href="?pagina=descobrir" target="_self" aria-label="LobbyAI, início"><i aria-hidden="true">▰</i>LOBBY<span>AI</span></a><nav aria-label="Principal">{tabs}</nav></header></div>')
+
+
+def hero(g, detail=False):
+    title = escape(g["title"])
+    url = f'https://store.steampowered.com/app/{g["id"]}/' if detail else link(pagina="jogo", id=g["id"])
+    kicker = "FICHA DO JOGO" if detail else "DESTAQUE DA CURADORIA"
+    label, target = ("Abrir na Steam", "_blank") if detail else ("Conhecer o jogo", "_self")
+    return f'''<section class="feature" style="--art:url('{art(g,"hero")}')">
+    <div class="feature-inner"><div class="kicker"><b></b>{kicker}</div><h1>{title}</h1>
+    <div class="tags">{escape(g["genre"])} <i> / </i> {escape(g["mode"])}</div>
+    <p>{escape(g["summary"])}</p><a class="cta" href="{url}" target="{target}" rel="noopener">{label} <span aria-hidden="true">↗</span></a></div></section>'''
+
+
+def rankings(full=False):
     rows = []
-    for name, item in report["modelos"].items():
-        macro = item["metricas"]["macro avg"]
-        rows.append({"Modelo": name, "Acertos": item["acertos"],
-                     "Acurácia": f"{item['metricas']['accuracy']:.2%}", "Precisão macro": f"{macro['precision']:.2%}",
-                     "Recall macro": f"{macro['recall']:.2%}", "F1 macro": f"{item['f1_macro']:.2%}"})
-    st.dataframe(pd.DataFrame(rows).set_index("Modelo"), width="stretch")
-    st.write(f"**{best}** teve o maior F1 macro na validação com cinco divisões do treino. Essa medida dá o mesmo peso aos dois votos.")
-    st.subheader("Onde o modelo errou")
-    matrix = pd.DataFrame(score["matriz"], index=["Voto real 👎", "Voto real 👍"], columns=["Previu 👎", "Previu 👍"])
-    st.table(matrix)
-    with st.expander("Conhecer a base de treino e teste"):
-        st.image(str(ROOT / "reports/graficos/votos.png"))
-        st.image(str(ROOT / "reports/graficos/tamanho.png"))
-    st.caption("O modelo aprendeu com avaliações em português brasileiro. Frases curtas, gírias e ironia podem mudar o sentido de uma crítica.")
+    for i, g in enumerate(ranked if full else ranked[:4], 1):
+        rows.append(f'''<a class="rankrow" href="{link(pagina="jogo",id=g["id"])}" target="_self">
+        <span class="position">{i:02}</span><img alt="" src="{art(g,"cover")}"><div class="rankname">{escape(g["title"])}<small>{escape(g["genre"])}</small></div>
+        <strong>{fmt(g["players"]["count"])}</strong></a>''')
+    stamp = local_time(max(g["players"]["consultado"] for g in ranked)) if ranked else "indisponível"
+    more = '' if full else '<a class="textlink" href="?pagina=ranking" target="_self">Ranking completo <span>→</span></a>'
+    return f'''<section class="ranking"><div class="kicker"><b></b>JOGADORES SIMULTÂNEOS</div><h2>Mais jogados</h2>
+    <div>{"".join(rows) or "Dados indisponíveis."}</div>{more}<small class="stamp">Steam · {stamp} (Manaus) · {len(games)} jogos no catálogo</small></section>'''
+
+
+def game_card(g):
+    mark = "<b>+</b>" if votes(g)[1] else ""
+    return f'''<a class="gamecard" href="{link(pagina="jogo",id=g["id"])}" target="_self">
+    <img src="{art(g,"cover")}" alt=""><div class="card-meta">{escape(g["genre"])} <span> / </span> {escape(g["mode"])}</div>
+    <h3>{escape(g["title"])}</h3><div class="verdict">{mark} {feedback(g)}</div></a>'''
+
+
+def discover():
+    st.html(f'<div class="lobby mast">{hero(games[0])}{rankings()}</div>')
+    modes = ["Todos", "Solo", "Cooperativo", "Fora do radar"]
+    selected = st.query_params.get("filtro", "Todos")
+    if selected not in modes:
+        selected = "Todos"
+    filters = "".join(f'<a class="filter" aria-current="{("true" if m == selected else "false")}" href="{link(filtro=m)}#catalogo" target="_self">{m}</a>' for m in modes)
+    items = games[1:] + games[:1]
+    note = ""
+    if selected == "Fora do radar":
+        items = sorted((g for g in games if votes(g)[0] is not None and g.get("players")),
+                       key=lambda g: g["players"]["count"])[:len(games)//2]
+        items.sort(key=lambda g: -votes(g)[0])
+        note = "<p>Entre os jogos com menos jogadores no catálogo, estes receberam mais avaliações positivas em proporção.</p>"
+    elif selected != "Todos":
+        items = [g for g in items if g["mode"] == selected]
+    cards = "".join(game_card(g) for g in items)
+    st.html(f'<section class="lobby shelf" id="catalogo"><div class="shelfbar"><h2>Descobrir jogos</h2><div class="filters" aria-label="Filtrar jogos">{filters}</div></div>{note}<div class="cards">{cards}</div></section>')
+
+
+nav()
+if page == "laboratorio":
+    st.html('<div class="lobby section-title"><div class="kicker">MACHINE LEARNING</div><h1>Laboratório de avaliações</h1><p>O modelo tenta prever o voto de quem escreveu uma avaliação em português.</p></div>')
+    from review_lab import render
+    render()
+elif page == "ranking":
+    st.html(f'<div class="lobby rankfull">{rankings(full=True)}<p>Ordem pela última contagem disponível na Steam. Consulte o horário de cada leitura na ficha do jogo.</p></div>')
+elif page == "jogo" and st.query_params.get("id") in by_id:
+    game = by_id[st.query_params["id"]]
+    pct, total = votes(game)
+    r, p = game.get("reviews"), game.get("players")
+    streams = "https://www.twitch.tv/search?term=" + quote(game["title"])
+    reviews = f"{fmt(total)} votos acumulados · SteamSpy · {local_time(r['consultado'])} (Manaus)" if total else "Sem leitura disponível"
+    players = f"Steam · {local_time(p['consultado'])} (Manaus)" if p else "Sem leitura disponível"
+    st.html(f'''<div class="lobby detail">{hero(game, detail=True)}<div class="detailgrid">
+    <section><h2>Voto da comunidade</h2><strong>{feedback(game)}</strong><small>{reviews}</small></section>
+    <section><h2>Jogadores simultâneos</h2><strong>{fmt(p["count"]) if p else "—"}</strong><small>{players}</small></section>
+    <section><h2>Transmissões</h2><a class="textlink" href="{streams}" target="_blank" rel="noopener">Buscar na Twitch ↗</a><small>Consulte os canais na Twitch.</small></section></div></div>''')
+else:
+    discover()

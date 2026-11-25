@@ -2,9 +2,17 @@
 
 **Jackson Marques de Souza · ML Challenge · 25 de novembro de 2026**
 
-Será que dá para adivinhar o joinha de um jogador só pelo que ele escreveu? O LobbyAI lê uma avaliação em português da Steam e tenta prever o voto do autor. O jogador pode elogiar a campanha e reclamar do multiplayer no mesmo texto. Esse tipo de comentário torna a resposta menos óbvia.
+O LobbyAI ajuda a escolher um jogo de PC para experimentar. A vitrine reúne oito jogos da Steam com perfis diferentes. Dá para começar pelo número de jogadores, pelo voto da comunidade ou pelo tipo de experiência que você quer jogar.
 
-![Uma avaliação analisada no LobbyAI](screenshots/interface.png)
+![Página de descoberta com Hades II e o ranking da seleção](screenshots/descobrir.png)
+
+## Como usar
+
+- **Descobrir** traz um destaque da curadoria e filtros por modalidade. Em **Fora do radar**, aparecem jogos com menos jogadores dentro do catálogo e boa recepção entre quem avaliou.
+- **Ranking** ordena o catálogo pela quantidade de pessoas jogando simultaneamente na última consulta. A ficha de cada jogo mostra o horário da leitura, as avaliações acumuladas e os links da Steam e da Twitch.
+- **Laboratório** é a parte de aprendizado de máquina do trabalho. O modelo lê uma avaliação em português e tenta prever o voto do autor. Na aba **Teste às cegas**, é possível revelar o voto real após dar um palpite.
+
+Os indicadores de descoberta vêm de consultas à Steam e ao SteamSpy. O modelo de texto foi treinado separadamente com avaliações rotuladas de jogadores brasileiros. O projeto ainda não possui histórico suficiente para estimar a popularidade da próxima semana. [Dados do catálogo](data/CATALOGO.md) · [Dados do treinamento](data/README.md)
 
 ## Abrir o app
 
@@ -18,7 +26,7 @@ py -3.13 -m venv .venv
 
 No Linux ou macOS com Python 3.13, use `python3.13 -m venv .venv` e substitua `.\.venv\Scripts\python.exe` por `.venv/bin/python`. O Streamlit informa o endereço local no terminal. O modelo treinado já acompanha o projeto. Depois de instalar as dependências, a análise de texto funciona offline. Para abrir os três comentários reais pela primeira vez, clique em **Teste às cegas → Carregar avaliações** com acesso à internet.
 
-## O que entrou no treino
+## Dados e pré-processamento do modelo
 
 Usei o recorte de 2.000 avaliações do *Steam Brazilian Portuguese Games Reviews Dataset*. Os pesquisadores Larissa F. S. Britto e Luciano D. S. Pacífico usaram o voto da Steam para separar quem recomendou o jogo de quem votou contra. O modelo recebe só o comentário. A identificação do arquivo e o voto ficam fora das entradas. [Origem dos dados, referência e condições de uso](data/README.md)
 
@@ -68,7 +76,7 @@ O script baixa as duas listas de comentários de uma versão fixa da fonte, veri
 
 ## Demonstração em sala
 
-Abra **Teste às cegas**, leia um dos comentários e peça o palpite da turma. Ao clicar em **Revelar previsão e voto**, o aplicativo processa aquele texto e mostra o voto real ao lado do resultado da previsão. Os três casos foram escolhidos depois da avaliação para mostrar dois acertos e um erro.
+Abra **Laboratório → Teste às cegas**, leia um dos comentários e peça o palpite da turma. Ao clicar em **Revelar previsão e voto**, o aplicativo processa aquele texto e mostra o voto real ao lado do resultado da previsão. Os três casos foram escolhidos depois da avaliação para mostrar dois acertos e um erro.
 
 | Caso | O que o jogador comenta | Voto real | LobbyAI |
 | --- | --- | --- | --- |
@@ -81,6 +89,35 @@ O caso 3 rende uma pergunta para a turma: um jogador pode elogiar parte do jogo 
 ## Limites e próxima melhoria
 
 O teste cobre um recorte equilibrado de avaliações longas. Uma página específica da Steam pode ter outra proporção de votos. A acurácia de 84,25% se refere aos 400 comentários separados para o teste. Para medir melhor o uso em sala, uma próxima etapa seria coletar avaliações curtas de outros jogos e calcular o resultado nelas, separadamente.
+
+## Organização do projeto
+
+| Caminho | Conteúdo |
+| --- | --- |
+| `app.py`, `interface.css` | Navegação, descoberta, filtros, fichas e ranking. |
+| `catalogo.py`, `data/catalogo.json` | Coleta dos indicadores e última consulta disponível. |
+| `review_lab.py`, `corpus.py`, `train.py` | Interface do laboratório, preparação dos textos e comparação dos modelos. |
+| `models/`, `reports/` | Modelo salvo, métricas e gráficos produzidos no treinamento. |
+| `screenshots/`, `static/fonts/` | Evidências de execução e fontes da interface. |
+| `requirements.txt`, `.streamlit/` | Dependências e configuração do Streamlit. |
+
+## Verificação da interface
+
+Na vitrine, os filtros mudam os jogos exibidos. Cada capa abre a ficha do título. No ranking, o maior número de jogadores ocupa a primeira posição. No laboratório, o resultado vem do classificador salvo em disco. As imagens abaixo mostram a mesma versão em desktop e celular.
+
+![Ranking do catálogo](screenshots/ranking.png)
+
+<details><summary>Ver a página no celular</summary>
+
+<img src="screenshots/celular.png" alt="Página de descoberta em uma tela de celular" width="300">
+
+</details>
+
+## Referências
+
+- [LilyAI, de Vitória Passos](https://github.com/vitoriarop/LilyAI), referência para a organização da documentação acadêmica.
+- [Britto e Pacífico, SBGames 2020](https://www.sbgames.org/proceedings2020/ComputacaoShort/209781.pdf), fonte do corpus brasileiro.
+- [Steam Web API](https://partner.steamgames.com/doc/webapi/ISteamUserStats#GetNumberOfCurrentPlayers) e [SteamSpy](https://steamspy.com/api.php), fontes dos indicadores do catálogo.
 
 ## Uso de IA
 

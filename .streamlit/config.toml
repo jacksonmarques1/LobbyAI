@@ -1,10 +1,14 @@
 [theme]
-base = "light"
-primaryColor = "#087266"
-backgroundColor = "#FAFAF7"
-secondaryBackgroundColor = "#E9EEEA"
-textColor = "#172924"
+base = "dark"
+primaryColor = "#d9ff58"
+backgroundColor = "#101211"
+secondaryBackgroundColor = "#1d211e"
+textColor = "#f3f3eb"
 font = "sans serif"
+
+[server]
+enableStaticServing = true
+runOnSave = true
 
 [browser]
 gatherUsageStats = false
