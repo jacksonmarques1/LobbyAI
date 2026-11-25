@@ -2,22 +2,24 @@
 
 **Jackson Marques de Souza · ML Challenge · 25 de novembro de 2026**
 
-O LobbyAI ajuda a escolher um jogo de PC para experimentar. A vitrine reúne indies, demos, jogos completos grátis e opções cooperativas da Steam. Dá para começar pelo número de jogadores, pelo voto da comunidade ou pelo tipo de experiência que você quer jogar.
+Quero um jogo grátis pra jogar com um amigo hoje. No LobbyAI, escolho **Grátis** e **Co-op online** e vejo quais jogos do catálogo atendem aos dois critérios. Se a ideia for experimentar algo diferente, o radar reúne demos indie com um link para a demonstração na Steam.
 
-![Página de descoberta com coleções de indies, demos e jogos grátis](screenshots/descobrir.png)
+![Tela inicial do LobbyAI com Bread & Fred e as demos da Steam](screenshots/descobrir.png)
 
-## Como usar
+## Escolher o que jogar
 
-- **Descobrir** abre quatro coleções e um radar de demos indie consultado na Steam. As sugestões de cada coleção variam por dia. Use **Atualizar catálogo da Steam** para buscar novas demos e atualizar os dados pela própria tela. Em **Explorar**, combine filtros como **Grátis + Co-op online** ou **Indie + Demo**, ou use **Surpreenda-me** dentro da seleção. Cada ficha permite continuar explorando outros jogos.
-- **Demos** abrem a página da demonstração na Steam; os modos da ficha são os do jogo completo. **Grátis** identifica o jogo completo que a loja informa como gratuito.
-- **Ranking** ordena o catálogo pela quantidade de pessoas jogando simultaneamente na última consulta. A ficha de cada jogo mostra o horário da leitura, as avaliações acumuladas e os links da Steam e da Twitch.
-- **Laboratório** é a parte de aprendizado de máquina do trabalho. O modelo lê uma avaliação em português e tenta prever o voto do autor. Na aba **Teste às cegas**, é possível revelar o voto real após dar um palpite.
+| O que você procura | Onde encontrar |
+| --- | --- |
+| Um jogo em dupla | Em **Pra jogar em companhia**, escolha **Co-op local** para dividir a tela ou **Co-op online** para jogar de computadores diferentes. |
+| Uma demo para experimentar | Em **No radar das demos**, abra a ficha de um jogo e selecione **Abrir demo na Steam**. Os modos de jogo informados na ficha valem para a versão completa. |
+| Um indie com menos gente jogando | Combine **Indie** e **Fora do radar**. Entre os jogos com menor atividade no catálogo, o app mostra primeiro os que têm maior proporção de avaliações positivas. |
+| Saber o que está sendo jogado | O **Ranking** compara o número de jogadores simultâneos na Steam na última consulta. A ficha mostra o horário da leitura. |
 
-Os indicadores de descoberta vêm de consultas à Steam e ao SteamSpy. O modelo de texto foi treinado separadamente com avaliações rotuladas de jogadores brasileiros. O projeto ainda não possui histórico suficiente para estimar a popularidade da próxima semana. [Dados do catálogo](data/CATALOGO.md) · [Dados do treinamento](data/README.md)
+Use **Atualizar catálogo da Steam** para consultar outras demos e atualizar os indicadores. O catálogo salvo permite explorar a última coleta ao abrir o app. [Como os jogos entram no catálogo](data/CATALOGO.md)
 
-## Abrir o app
+## Rodar no computador
 
-No Windows, com **Python 3.13 de 64 bits** instalado, extraia o ZIP e dê dois cliques em **Abrir_LobbyAI.bat**. A primeira abertura instala as dependências. Para usar o terminal, abra-o na pasta que contém `app.py` e execute:
+Com Python 3.13 de 64 bits instalado no Windows, abra `Abrir_LobbyAI.bat`. Para iniciar pelo PowerShell, execute os comandos na pasta do projeto:
 
 ```powershell
 py -3.13 -m venv .venv
@@ -25,100 +27,36 @@ py -3.13 -m venv .venv
 .\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-No Linux ou macOS com Python 3.13, use `python3.13 -m venv .venv` e substitua `.\.venv\Scripts\python.exe` por `.venv/bin/python`. O Streamlit informa o endereço local no terminal. O modelo treinado já acompanha o projeto. Depois de instalar as dependências, a análise de texto funciona offline. Para abrir os três comentários reais pela primeira vez, clique em **Teste às cegas → Carregar avaliações** com acesso à internet.
+No Linux ou macOS:
 
-## Dados e pré-processamento do modelo
-
-Usei o recorte de 2.000 avaliações do *Steam Brazilian Portuguese Games Reviews Dataset*. Os pesquisadores Larissa F. S. Britto e Luciano D. S. Pacífico usaram o voto da Steam para separar quem recomendou o jogo de quem votou contra. O modelo recebe só o comentário. A identificação do arquivo e o voto ficam fora das entradas. [Origem dos dados, referência e condições de uso](data/README.md)
-
-Antes de dividir a base, o script normaliza espaços, remove links, e-mails e menções e confere duplicatas e conflitos de voto. Nesse recorte, as 2.000 linhas tinham texto e nenhuma foi excluída por duplicidade ou conflito segundo essa verificação.
-
-### Três coisas que apareceram nos dados
-
-1. Há 1.000 recomendações e 1.000 votos contrários. Um palpite que sempre escolhe o mesmo voto acertaria exatamente metade do teste. O equilíbrio vem da seleção feita para a pesquisa.
-2. As avaliações positivas têm mediana de 351,5 palavras, contra 336 nas negativas. O comprimento sozinho ajuda pouco a distinguir os dois grupos no gráfico.
-3. Nenhuma das 2.000 avaliações tem 20 palavras ou menos pela contagem usada. Isso importa na demonstração: uma frase digitada em sala é bem mais curta do que os textos usados para medir a acurácia.
-
-![Quantidade de avaliações por voto](reports/graficos/votos.png)
-
-![Distribuição do total de palavras por avaliação e voto](reports/graficos/tamanho.png)
-
-## Como comparei os modelos
-
-Separei 1.600 avaliações para treino e 400 para teste, preservando a proporção dos votos e usando semente 42. O TF-IDF representa palavras e pares de palavras como números. Os pares permitem tratar expressões como “não gostei” juntas. Cada modelo aprende seu vocabulário apenas com a parte de treino de cada divisão.
-
-Comparei Naive Bayes multinomial e Regressão Logística em cinco divisões do treino. O critério de escolha foi o **F1 macro**, a média do F1 dos dois votos. Assim, ambos têm o mesmo peso. A Regressão Logística ficou com 84,05% na validação, contra 83,29% do Naive Bayes. Depois dessa escolha, avaliei os dois modelos no mesmo teste reservado.
-
-| Modelo | F1 macro na validação | Acertos no teste | Acurácia | Precisão macro | Recall macro | F1 macro no teste |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Naive Bayes | 83,29% | 334/400 | 83,50% | 83,51% | 83,50% | 83,50% |
-| Regressão Logística | 84,05% | 337/400 | 84,25% | 84,29% | 84,25% | 84,25% |
-
-No teste da Regressão Logística, a matriz de confusão ficou assim:
-
-| Voto do jogador | Previsão 👎 | Previsão 👍 |
-| --- | ---: | ---: |
-| 👎 Não recomendou | 165 | 35 |
-| 👍 Recomendou | 28 | 172 |
-
-Em 35 casos o modelo tratou uma crítica como recomendação. Em outros 28, perdeu uma recomendação real. Para quem analisa o que os jogadores pensam de um lançamento, o primeiro erro pode esconder reclamações. As métricas por classe e as matrizes dos **dois** modelos estão no [relatório de avaliação](reports/metricas.json).
-
-![Resultados dos modelos na aplicação](screenshots/resultados.png)
-
-## Reproduzir o treinamento
-
-No mesmo ambiente Python, execute:
-
-```powershell
-.\.venv\Scripts\python.exe train.py
+```sh
+python3.13 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m streamlit run app.py
 ```
 
-O script baixa as duas listas de comentários de uma versão fixa da fonte, verifica os arquivos, faz a análise e treina os modelos. Ele grava o classificador junto com o vocabulário em `models/lobbyai.joblib`, as métricas em `reports/metricas.json` e os dois gráficos em `reports/graficos/`. O aplicativo carrega esse modelo ao abrir.
+Abra o endereço local que o Streamlit exibir no terminal. O repositório já inclui o modelo treinado.
 
-## Demonstração em sala
+## Dá para prever o voto pelo comentário?
 
-Abra **Laboratório → Teste às cegas**, leia um dos comentários e peça o palpite da turma. Ao clicar em **Revelar previsão e voto**, o aplicativo processa aquele texto e mostra o voto real ao lado do resultado da previsão. Os três casos foram escolhidos depois da avaliação para mostrar dois acertos e um erro.
+No **Laboratório**, o modelo lê uma avaliação em português e estima se o jogador recomendou o jogo. Um dos erros no teste veio de uma avaliação de Mortal Kombat. O jogador elogiou a nostalgia, criticou o modo multiplayer e votou contra. O modelo previu uma recomendação.
 
-| Caso | O que o jogador comenta | Voto real | LobbyAI |
-| --- | --- | --- | --- |
-| 1 | O desafio de cortar árvores em Timberman | Recomendou | Recomendou |
-| 2 | Um jogo que piorou com as atualizações | Não recomendou | Não recomendou |
-| 3 | A nostalgia de Mortal Kombat e os problemas do multiplayer | Não recomendou | Recomendou |
+O treino usou 1.600 avaliações. A Regressão Logística teve o maior F1 macro na validação cruzada e foi escolhida antes da avaliação final. Os dois algoritmos receberam as mesmas 400 avaliações de teste.
 
-O caso 3 rende uma pergunta para a turma: um jogador pode elogiar parte do jogo e mesmo assim votar contra? Aqui, foi exatamente o que aconteceu. A previsão para esse caso foi feita com o texto integral.
+| Modelo | F1 macro na validação | Acertos no teste | Acurácia no teste |
+| --- | ---: | ---: | ---: |
+| Naive Bayes multinomial | 83,29% | 334 de 400 | 83,50% |
+| Regressão Logística | 84,05% | 337 de 400 | 84,25% |
 
-## Limites e próxima melhoria
-
-O teste cobre um recorte equilibrado de avaliações longas. Uma página específica da Steam pode ter outra proporção de votos. A acurácia de 84,25% se refere aos 400 comentários separados para o teste. Para medir melhor o uso em sala, uma próxima etapa seria coletar avaliações curtas de outros jogos e calcular o resultado nelas, separadamente.
-
-## Organização do projeto
-
-| Caminho | Conteúdo |
-| --- | --- |
-| `app.py`, `interface.css` | Navegação, descoberta, filtros, fichas e ranking. |
-| `catalogo.py`, `data/catalogo.json` | Coleta dos indicadores e última consulta disponível. |
-| `review_lab.py`, `corpus.py`, `train.py` | Interface do laboratório, preparação dos textos e comparação dos modelos. |
-| `models/`, `reports/` | Modelo salvo, métricas e gráficos produzidos no treinamento. |
-| `screenshots/`, `static/fonts/` | Evidências de execução e fontes da interface. |
-| `requirements.txt`, `.streamlit/` | Dependências e configuração do Streamlit. |
-
-## Verificação da interface
-
-Na vitrine, os filtros mudam os jogos exibidos. Cada capa abre a ficha do título. No ranking, o maior número de jogadores ocupa a primeira posição. No laboratório, o resultado vem do classificador salvo em disco. As imagens abaixo mostram a mesma versão em desktop e celular.
-
-![Ranking do catálogo](screenshots/ranking.png)
-
-<details><summary>Ver a página no celular</summary>
-
-<img src="screenshots/celular.png" alt="Página de descoberta em uma tela de celular" width="300">
-
-</details>
+O modelo prevê o voto de quem escreveu. Os filtros e o ranking usam os dados do catálogo. [Análise dos comentários, gráficos e reprodução do treino](reports/README.md)
 
 ## Referências
 
-- [Britto e Pacífico, SBGames 2020](https://www.sbgames.org/proceedings2020/ComputacaoShort/209781.pdf), fonte do corpus brasileiro.
-- [Steam Web API](https://partner.steamgames.com/doc/webapi/ISteamUserStats#GetNumberOfCurrentPlayers) e [SteamSpy](https://steamspy.com/api.php), fontes dos indicadores do catálogo.
+| Uso no LobbyAI | Fonte |
+| --- | --- |
+| Comentários em português e votos dos jogadores | Larissa F. S. Britto e Luciano D. S. Pacífico, SBGames 2020. [Artigo](https://www.sbgames.org/proceedings2020/ComputacaoShort/209781.pdf) · [Recorte usado e condições de uso](data/README.md) |
+| Jogadores simultâneos e listagem de demos | Valve. [Steam Web API](https://partner.steamgames.com/doc/webapi/ISteamUserStats#GetNumberOfCurrentPlayers) · [Busca de demos indie](https://store.steampowered.com/search/?category1=10&tags=492&sort_by=Released_DESC) |
+| Totais de avaliações positivas e negativas por jogo | [SteamSpy API](https://steamspy.com/api.php) |
+| Redação e revisão da documentação | Lauren Tan, *pstack*. [Projeto original](https://github.com/cursor/plugins/tree/41e400932eca14f289e7db717a70455256b6d388/pstack) · [technical-writing](.agents/skills/technical-writing/SKILL.md) · [unslop](.agents/skills/unslop/SKILL.md) |
 
-## Uso de IA
-
-O Codex auxiliou na implementação, no treinamento, nos testes e na redação da documentação. As métricas apresentadas foram calculadas pela execução de `train.py` sobre as avaliações da base.
+O Codex auxiliou na implementação, no treinamento, nos testes e na documentação. O script `train.py` calculou os resultados sobre o corpus de avaliações da Steam.
